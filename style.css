@@ -1,0 +1,46 @@
+*{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.its_me{
+    width: 25%;
+    height: 200px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: blueviolet;
+    background-color: yellow;
+    position: relative;
+}
+.its_me:after{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+}
+.its_me:hover.its_me:after{
+    visibility: visible;
+    width: 50%;
+}
+.its_me:before{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background-color: black;
+    opacity: 0.6;
+    visibility: hidden;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+.its_me:hover.its_me:before{
+    visibility: visible;
+    width: 50%;
+}
